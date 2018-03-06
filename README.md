@@ -20,12 +20,13 @@ https://play-gulp-react.herokuapp.com
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=http://www.github.com/mmizutani/play-gulp-react)
 
 ```bash
+$ npm install -g yo gulp-cli bower
 $ git clone http://www.github.com/mmizutani/play-gulp-react.git
 $ cd play-gulp-react
 $ heroku create play-gulp-react-youruniquesuffix
 $ heroku config:set PLAY_APP_SECRET=...
 $ heroku buildpacks:add heroku/jvm
-$ sbt stage deployHeroku
+$ sbt ";npm install;stage;deployHeroku"
 ```
 
 ![Routes](routes.png)
