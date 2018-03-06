@@ -17,3 +17,5 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2
 // play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
 
 scalafmtOnCompile := true
+
+herokuAppName in Compile := "play-gulp-react"
