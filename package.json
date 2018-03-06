@@ -1,0 +1,13 @@
+{
+  "name": "play-gulp-react",
+  "version": "0.1.0",
+  "dependencies": {
+    "gulp": "~3.9.1"
+  },
+  "devDependencies": {
+    "yo":  "~2.0.1"
+  },
+  "scripts": {
+    "postinstall": "cd ui && npm install"
+  }
+}

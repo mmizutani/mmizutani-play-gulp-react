@@ -1,0 +1,1 @@
+web: target/universal/stage/bin/play-gulp-react -Dhttp.port=${PORT} -Dplay.crypto.secret=${PLAY_APP_SECRET}

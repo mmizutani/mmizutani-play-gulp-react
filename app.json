@@ -1,0 +1,23 @@
+{
+  "name": "play-gulp-react",
+  "description": "A sample app of Play Framework & Yeoman Gulp hybrid project.",
+  "keywords": [
+    "Play",
+    "Gulp",
+    "React",
+    "Yeoman"
+  ],
+  "website": "https://github.com/mmizutani/sbt-play-gulp",
+  "repository": "https://github.com/mmizutani/sbt-play-gulp.git",
+  "success_url": "/",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-multi",
+    "NPM_CONFIG_PRODUCTION": "false",
+    "PLAY_APP_SECRET": "G@`kA9@D0DPO]Dx<j?7Pv92Ei41fqHYxkUDU66a8Ba_@2Y1tVvc1/uZ=k205:X6L"
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/ddollar/heroku-buildpack-multi"
+    }
+  ]
+}
