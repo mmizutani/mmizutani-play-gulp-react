@@ -17,9 +17,16 @@ https://play-gulp-react.herokuapp.com
 
 ## Deploy your own to Heroku
 
-Thanks to the powerful [Heroku multi build pack](https://github.com/ddollar/heroku-buildpack-multi), you can deploy this non-standard hybrid application to Heroku in one go.
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=http://www.github.com/mmizutani/play-gulp-react)
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+```bash
+$ git clone http://www.github.com/mmizutani/play-gulp-react.git
+$ cd play-gulp-react
+$ heroku create play-gulp-react-youruniquesuffix
+$ heroku config:set PLAY_APP_SECRET=...
+$ heroku buildpacks:add heroku/jvm
+$ sbt stage deployHeroku
+```
 
 ![Routes](routes.png)
 
