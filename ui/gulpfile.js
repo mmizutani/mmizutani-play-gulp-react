@@ -13,10 +13,10 @@ gulp.registry(hub);
 gulp.task('build', gulp.series(gulp.parallel('other', 'webpack:dist')));
 gulp.task('test', gulp.series('karma:single-run'));
 gulp.task('test:auto', gulp.series('karma:auto-run'));
-gulp.task('serve', gulp.series('webpack:watch', 'watch', 'browsersync'));
+gulp.task('watch', gulp.series('webpack:watch', 'browsersync:watch', 'browsersync'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
-gulp.task('watch', watch);
+gulp.task('browsersync:watch', watch);
 
 function reloadBrowserSync(cb) {
   browserSync.reload();
